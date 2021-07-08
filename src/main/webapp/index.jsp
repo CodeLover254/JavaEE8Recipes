@@ -5,9 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<jsp:useBean id="dateBean" scope="application" class="com.codelover254.JavaEE8Recipes.DateBean"/>
+<p>${dateBean.current}</p>
 </body>
 </html>
